@@ -2,7 +2,9 @@ from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.bibdatabase import BibDatabase
 from bibtexparser import dumps
 import requests
-import requests
+import base64
+import matplotlib.pyplot as plt
+from IPython.core.pylabtools import print_figure
 
 class Works:
     def __init__(self, oaid):
