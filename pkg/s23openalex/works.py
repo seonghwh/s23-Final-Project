@@ -21,7 +21,7 @@ class Works:
 
     @property
     def bibtex(self):
-        """Print formetted Bibtex entry."""
+        """Print formatted Bibtex entry."""
         _authors = [au["author"]["display_name"] for au in self.data["authorships"]]
         if len(_authors) == 0:
             authors = "Editorial"
