@@ -5,4 +5,4 @@ from s23openalex import Works
 @click.argument('oaid', nargs=1)
 def main(oaid):
     work = Works(oaid)
-    return work
+    print(work.ris)
