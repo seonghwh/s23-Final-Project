@@ -10,7 +10,7 @@ setup(
     maintainer_email="seonghwh@andrew.cmu.edu",
     license="MIT",
     packages=["s23openalex"],
-    entry_points={"console_scripts": ["ris = s23openalex.works:Works"]},
+    # entry_points={"console_scripts": ["ris = s23openalex.works:Works"]},
     scripts=[],
     long_description="""Works class with bibtex and RIS attributes.""",
 )
