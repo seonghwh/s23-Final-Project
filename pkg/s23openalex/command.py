@@ -3,9 +3,10 @@ import click
 from s23openalex import Works
 
 @click.command()
-def main(oaid: str):
-    work = Works(oaid)
-    return work.ris
+@click.argument('doi', nargs=-1)
+def main():
+    work = Works(doi)
+    print(work.ris)
 
 
 # if __name__ == '__main__':
