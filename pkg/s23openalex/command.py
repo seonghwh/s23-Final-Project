@@ -2,8 +2,8 @@ import click
 
 from s23openalex import Works
 
-@click.argument('oaid', nargs=-1)
-def main(oaid):
+@click.command()
+def main(oaid: str):
     work = Works(oaid)
     return work.ris
 
