@@ -8,5 +8,5 @@ def main(oaid):
     return work.ris
 
 
-if __name__ == '__main__':
-    main(oaid)
+# if __name__ == '__main__':
+  #   main(oaid)
