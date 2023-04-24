@@ -4,7 +4,7 @@ from s23openalex import Works
 
 @click.command()
 @click.argument('doi', nargs=-1)
-def main():
+def main(doi):
     work = Works(doi)
     print(work.ris)
 
