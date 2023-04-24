@@ -1,8 +1,15 @@
+"""Python file for command line utility."""
 import click
 from s23openalex import Works
 
+
 @click.command()
-@click.argument('oaid', nargs=1)
-def main(oaid):
+@click.argument("oaid", "type", nargs=2)
+def main(oaid, type):
+    """Take oaid and type to output RIS or Bibtex entry."""
     work = Works(oaid)
-    print(work.ris)
+    if type == "ris":
+        print(work.ris)
+    elif type == "bibtex":
+        print(work.bibtex)
+        

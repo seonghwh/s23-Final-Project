@@ -54,7 +54,7 @@ class Works:
         ]
         writer = BibTexWriter()
         bibtex = dumps(database, writer)
-        return print(bibtex)
+        return bibtex
 
     @property
     def ris(self):
