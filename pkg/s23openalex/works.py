@@ -20,8 +20,6 @@ class Works:
         return "repr"
 
     @property
-    @click.command(help='Bibtex entry')
-    @click.argument(self)
     def bibtex(self):
         """Print formetted Bibtex entry."""
         _authors = [au["author"]["display_name"] for au in self.data["authorships"]]
