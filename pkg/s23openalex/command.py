@@ -5,11 +5,11 @@ from s23openalex import Works
 
 @click.command()
 @click.argument("oaid")
-@click.argument("type")
-def main(oaid, type):
+@click.argument("entry")
+def main(oaid, entry):
     """Take oaid and type to output RIS or Bibtex entry."""
     work = Works(oaid)
-    if type == "ris":
+    if entry == "ris":
         print(work.ris)
-    elif type == "bibtex":
+    elif entry == "bibtex":
         print(work.bibtex)
