@@ -82,4 +82,4 @@ class Works:
         fields += ["ER  -"]
 
         ris = "\n".join(fields)
-        return print(ris)
+        return ris
