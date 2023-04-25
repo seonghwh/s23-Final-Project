@@ -1,0 +1,11 @@
+name: Test bibtex and ris methods
+on: push
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:      
+      - uses: actions/checkout@v3
+      - run: |
+          pip install requests pytest
+          pytest .
