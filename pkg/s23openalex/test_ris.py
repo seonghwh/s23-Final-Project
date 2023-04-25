@@ -2,7 +2,7 @@
 from s23openalex import Works
 
 
-Ref_ris = """TY  - JOUR
+REF_RIS = """TY  - JOUR
 AU  - John R. Kitchin
 PY  - 2015
 TI  - Examples of Effective Data Sharing in Scientific Publishing
@@ -18,4 +18,4 @@ ER  -"""
 def test_ris():
     """Test function for ris."""
     work = Works("https://doi.org/10.1021/acscatal.5b00538")
-    assert Ref_ris == work.ris
+    assert REF_RIS == work.ris
