@@ -10,7 +10,8 @@ ref_bibtex = """@journal-article{https://openalex.org/W2288114809,
  url = {https://doi.org/10.1021/acscatal.5b00538},
  volume = {5},
  year = {2015}
-}"""
+}
+"""
 
 
 def test_bibtex():
